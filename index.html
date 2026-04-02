@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FWEE Installer</title>
+
+  <style>
+    /* Load custom font */
+    @font-face {
+      font-family: "FWEEFont";
+      src: url("font.ttf") format("truetype");
+    }
+
+    body {
+      background-color: #008080;
+      font-family: "FWEEFont", "MS Sans Serif", Tahoma, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .window {
+      width: 420px;
+      background: #c0c0c0;
+      border: 2px solid #ffffff;
+      border-right-color: #404040;
+      border-bottom-color: #404040;
+      box-shadow: 2px 2px 0 #000;
+    }
+
+    .title-bar {
+      background: linear-gradient(to right, #000080, #1084d0);
+      color: white;
+      padding: 4px 8px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .title-bar img {
+      width: 16px;
+      height: 16px;
+      margin-right: 6px;
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 16px;
+      background: #c0c0c0;
+      border: 2px solid #ffffff;
+      border-right-color: #404040;
+      border-bottom-color: #404040;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .button:active {
+      border: 2px solid #404040;
+      border-right-color: #ffffff;
+      border-bottom-color: #ffffff;
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #202020;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="window">
+    <div class="title-bar">
+      <img src="icon.png" alt="icon">
+      Fake Windows Error Effects (FWEE) Installer Setup
+    </div>
+
+    <div class="content">
+      <p>Welcome to Fake Windows Error Effects (FWEE).</p>
+      <p>This tool simulates classic Windows-style error visuals and installers.</p>
+      <p>Click the button below to download the installer.</p>
+
+      <a class="button" href="FWEE_Installer.exe" download>
+        Download FWEE Installer
+      </a>
+
+      <div class="footer">
+        Windows-style UI • GitHub Pages build
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
